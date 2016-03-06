@@ -12,7 +12,7 @@ Javascript的起源是用作简单的网页交互.但是由于其数据类型都
 
 但是new命令会将构造函数中的所有数据都全部创造一个副本,这样一些公用的属性和方法就会随着实例的增多而耗费更多的资源
 
-```
+```` javascript
 function Sth(){
 	this.pro_one = ''
     this.fun_one = function(){}
@@ -22,18 +22,18 @@ var sth_one = new Sth()
 var sth_two = new Sth()
 
 sth_one.fun_one != sth_two.fun_one //false, 因为在实例化的时候开辟两个内存区域
-```
+````
 
 所以为了解决这个问题,引入了prototype.  
 有了prototype,大家开始建议这样书写
 
-```
+```` javascript
 function Sth(){
 	this.pro_one = ''
 }
 
 Sth.prototype.fun_one = function() {}
-```
+````
 
 prototype属性是一个对象,存放的是所有实例对象需要共享的属性和方法.  
 其实相当于构造函数里面的属性和方法分了两种,一种在构造函数里在this下自己拥有,一种在prototype上共享使用的.
@@ -43,7 +43,7 @@ prototype属性是一个对象,存放的是所有实例对象需要共享的属�
 
 
 理解继承有两个主要的属性
-```
+```` javascript
 function Sth(){
 	...
 }
@@ -52,7 +52,7 @@ var sth = new Sth()
 
 //sth.prototype 原型对象
 //sth.construct (指向Sth)此属性指向其构造函数
-```
+````
 
 #### 原型链继承
 
@@ -84,24 +84,3 @@ Sub.prototype.construct = Sub
 参考:
 
 [阮一峰的网络日志 - Javascript继承机制的设计思想](http://www.ruanyifeng.com/blog/2011/06/designing_ideas_of_inheritance_mechanism_in_javascript.html)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
