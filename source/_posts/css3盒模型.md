@@ -8,6 +8,8 @@ date: 2016-03-13 14:41:00
 
 ![](https://leohxj.gitbooks.io/front-end-database/content/html-and-css-basic/assets/box-model.svg)
 
+<!--more-->
+
 盒模型的值
 1. content-box (默认)
 2. padding-box

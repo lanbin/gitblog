@@ -20,6 +20,7 @@ class Foo {
     method(){};
 }
 ````
+<!--more-->
 
 *一些细节*
 

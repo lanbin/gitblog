@@ -3,6 +3,9 @@ tags: []
 categories: []
 date: 2016-03-04 22:30:00
 ---
+在ES6中增加了Class的语法,其看起来和其他语言的class类似,但是其实存在着区别
+
+<!--more-->
 
 #### class的基本使用方法
 ````javascript

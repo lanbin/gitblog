@@ -18,6 +18,7 @@ var subObject = Object.create(superObject)
 //这样subObject就已经继承了superObject的属性
 console.log(subObject.a) // 1
 ````
+<!--more-->
 
 另外一种方式,在继承的时候,给subObject也添加属性
 
